@@ -1,0 +1,621 @@
+* {
+    color: hsl(233, 98%, 6%);
+    
+   }
+   
+   
+   body {
+    background-color: hsl(38, 98%, 98%);
+    margin: 0 auto;
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    
+    
+    
+   } 
+   
+   
+   
+   /* Navigation Bar */
+ 
+   header {
+    margin: 0;
+    padding: 0;
+   }
+ 
+   .logo {
+    position: absolute;
+    float: left;
+    height: 15%;
+    padding: 10px 0 0 20px;
+  
+  }
+  
+ 
+ 
+   .nav {
+    text-align: right; 
+  
+         
+   }
+   
+   .nav ul {
+       list-style-type: none; /* Remove default list styling */
+       margin: 0;
+       padding-right: 80px;   
+      
+       
+   }
+   
+   .nav li{
+      display: inline-flex;
+      margin-top: 60px;
+      margin-right: 0;
+      background-color: hsla(38, 98%, 5%,0.5); 
+      border-radius: 50px;
+    
+     
+      
+      }
+   
+      .nav a {
+      
+    color: hsl(38, 98%, 98%);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    height: 30px;
+    text-align: center;
+    padding: 0 20px;
+       
+ 
+  
+           }
+   
+     .nav a:hover {
+       background-color: hsl(240, 60%, 50%);
+       border-radius: 50px;
+       
+      }
+   
+   .nav a:active {
+       background-color: hsl(270, 100%, 60%);
+   }
+   
+ 
+   
+   
+   /* Hero  */
+   
+   .intro {
+   display: flex;
+    background-image: url('./resources/dog-bg.jpg');
+    background-color: hsla(246, 98%, 9%, 0.5); 
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+
+    margin-top: -10rem;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack items vertically */
+ 
+       
+   }
+
+   .intro h1, .intro h2 {
+    padding: 0;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    
+       }
+
+    .intro h1 {
+      font-family: "DM Serif Display", serif;
+      font-size: 6rem;    
+    }
+
+    .intro h2 {
+        font-family: "DM Serif Display", serif;
+        font-size: 3.5rem;    
+      }
+
+   /* About section */
+
+   .about {
+    
+   }
+
+   .about p {
+    padding: 10rem 10rem;
+    font-size: 1.5rem;
+
+   }
+     
+   
+   /* List sections */
+   
+   .things {
+       display: flex;
+       flex-direction: row; /* Set initial direction to row */
+       flex-wrap: wrap; /* Allow items to wrap to the next line */
+       margin:  0;
+       justify-content: center; /* Center the content horizontally */
+       align-items: center; /* Center the content vertically */
+       padding-bottom: 0;
+       
+       
+   }
+ 
+   
+
+
+   .things h2 {
+        margin: 0px;
+        padding-bottom: 0px;
+      
+       
+       
+   }
+
+   .things h3 {
+    text-align: center;
+   }
+ 
+   .how {
+    display: flex;
+    margin: 0;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack items vertically */
+    padding-bottom: 25rem;
+    padding-top: 0;
+       
+    
+ }
+ 
+ 
+ .how img {
+  height: 300px;
+     
+    
+ }
+ 
+ .how h2 {
+    position: relative;
+     margin: 0px;
+     padding-bottom: 0px;
+     padding-top: 10rem;
+     
+    
+    
+ }
+
+ .how h3 {
+    text-align: center;
+    
+ }
+
+ 
+   
+   .content {
+       height: 350px;
+       align-content: center;
+       margin: 100px auto;
+       
+       
+       
+          
+   }
+
+   
+   
+   /* Create four equal columns that floats next to each other */
+   .things .column {
+
+       float: left;
+       width: 33%; /* Set each column to occupy 25% of the container width */
+  box-sizing: border-box; /* Include padding and border in the column's total width */
+       
+     }
+ 
+     .how .column {
+        position: relative;
+        float: left;
+        width: 33%; /* Set each column to occupy 25% of the container width */
+   box-sizing: border-box; /* Include padding and border in the column's total width */
+        
+      }
+ 
+      .volunteer .column {
+        position: relative;
+        float: left;
+        width: 50%; /* Set each column to occupy 25% of the container width */
+        box-sizing: border-box; /* Include padding and border in the column's total width */
+        margin-bottom: 15rem;
+      }
+ 
+      .volunteer .content1 {
+        background-image: url(./resources/volunteer.jpg);
+        background-size: cover;
+        background-color: hsla(246, 98%, 9%, 0.5); 
+        background-blend-mode: overlay;
+        border-radius: 2rem;
+        height: 80vh;
+    
+      }
+
+      .volunteer .content1:hover {
+        background-size: cover;
+        background-color: hsla(246, 98%, 9%, 0.8); 
+       
+      }
+ 
+   
+      .volunteer .content2 {
+        background-image: url(./resources/support2.jpg);
+        background-size: cover;
+        background-color: hsla(246, 98%, 9%, 0.5); 
+        background-blend-mode: overlay;
+        border-radius: 2rem;
+        height: 80vh;
+      }
+
+      .volunteer .content2:hover {
+        background-size: cover;
+        background-color: hsla(246, 98%, 9%, 0.8); 
+       
+      }
+   
+     .row img,
+     .column img {
+        display: flex;
+        flex-direction: row; /* Set initial direction to row */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+       width: 400px;
+       align-items: center;
+       margin-left: 2rem;
+       border-radius: 1rem;
+       
+        
+     }
+   
+       /* Add padding between each column */
+   .row,
+   .row > .column {
+     padding: 8px;
+   }
+ 
+   /* Locations */
+ 
+   .locations {
+    background-image: url("./resources/locate.jpg");
+    background-size: cover;
+    background-color: hsla(246, 98%, 9%, 0.6); 
+    background-blend-mode: overlay;
+    width: 99vw;
+    height: 100vh;
+    padding: 2rem 0 6rem 0;
+    margin-left: -10px;
+    overflow: hidden;
+    
+    
+   }
+ 
+  .locations p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding: 0 10rem;
+  color: aliceblue;
+  font-weight: 600;
+    
+    
+   }
+ 
+   .locations h2{
+    padding-top: 8rem;
+    color: aliceblue;
+    font-size: 3rem;
+    
+    
+   }
+ 
+      /* Volunteer */
+ 
+      .volunteer {
+        padding-top: 5rem;
+        padding-bottom: 150px;
+        align-content: center;
+ 
+      }
+ 
+      .volunteer h3 {
+       
+        font-size: 3rem;
+        text-align: center;
+        color: aliceblue;
+                       
+       }
+ 
+       .volunteer p {
+       
+        font-size: 1.5rem;
+        color: aliceblue;
+       
+       }
+
+
+       .volunteer a {
+        text-decoration: none;
+              }
+       /* Breakaway */
+
+       .breakaway {
+        position: relative;
+        background-image: url(./resources/support.jpg);
+        background-color: hsla(246, 98%, 9%, 0.5); 
+        background-blend-mode: overlay;
+        background-size: cover;
+        padding-top: 2rem;
+        padding-bottom: 15rem;
+        margin-top: 50vh;
+        
+       }
+
+       
+       .breakaway h2 {
+      font-family: 'DM Serif Display';
+       text-align: center;
+       align-content: center;
+       padding: 5rem;
+       margin: 0;
+       font-size: 5rem;
+       color: hsl(38, 98%, 98%);
+       
+       }
+    
+   
+   
+   /* Typography */
+   
+   h1 {
+       
+       color: hsl(38, 98%, 98%);
+   
+   }
+ 
+ 
+   h2 {
+    font-family: 'DM Serif Display';
+       font-size: 3rem;
+       text-align: center;
+       font-weight: 900;
+       text-transform: capitalize;
+   
+   
+   }
+   
+   h2.tag {
+    
+       color: hsl(38, 98%, 98%);
+       font-weight: 900;
+       margin: 0px;
+       padding: 0px;
+   }
+   
+   p {
+    padding: 1.9rem;
+    font-size: 1.2rem;
+   }
+ 
+   h1, h2, h3, p {
+    padding: 2rem;
+   }
+ 
+   h3 {
+    
+    font-size: 2rem;
+    font-weight: 700;
+   }
+   
+
+   
+   /* Footer Section */
+   
+   footer {
+       
+       background-color: hsl(240, 100%, 10%); 
+       width: 100%;
+       letter-spacing: 0.4px;
+       text-align: center;
+       width: 99vw;
+       height: 30vh;
+       padding-top: 5vh;
+       margin-left: -10px;
+       margin-bottom: 0;
+       overflow: hidden;
+ 
+   }
+ 
+   footer p {
+    color: aliceblue;
+    padding: 0;
+   }
+ 
+  footer img {
+    
+    width: 5%;
+   }
+   
+
+   /* Responsive Design */
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 100%; /* Change width to 100% to make them stack vertically */
+        box-sizing: border-box; /* Include padding and border in the column's total width */
+     
+        max-height: 80%;
+      }
+
+      .breakaway {
+        display: none;
+      }
+
+    .intro {
+        width: 100%;
+      overflow: hidden;
+      margin-top: -15rem;
+      }
+
+      .intro h1{
+        padding: 4rem;
+      overflow: hidden;
+      font-size: 4rem;
+      }
+
+      .intro h2{
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      font-size: 2.5rem;
+      }
+
+      h2, h3 {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        }
+
+    .about p {
+      width: 70%;
+      overflow: hidden;
+      
+      padding: 4rem;
+      text-align: center;
+    }
+
+    .things {
+       flex-direction: column; /* Set initial direction to row */
+       width: 100%;
+       height: 100%;
+       padding-bottom: 0;
+       padding-top: 0;
+    
+        
+  }
+
+  .things h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+  }
+
+  .things .column {
+    float: none; /* Remove float */
+    width: 100%; /* Set each column to occupy full width */
+    padding-bottom: 8rem; /* Add padding between columns */
+    margin: 0;
+  }
+
+  .things img {
+    width: 80%;
+ 
+     
+}
+
+.how {
+    flex-direction: column; /* Set initial direction to row */
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+ 
+     
+}
+
+.how h2 {
+ padding-bottom: 0;
+ margin-bottom: 0;
+
+}
+
+.how .column {
+ float: none; /* Remove float */
+ width: 100%; /* Set each column to occupy full width */
+ padding-bottom: 12rem; /* Add padding between columns */
+ margin: 0;
+}
+
+.how img {
+ width: 80%;
+
+  
+}
+
+.locations {
+    margin-top: 15rem;
+    width: 100%;
+    height: 100%;
+}
+
+.locations p {
+    margin: 0;
+    padding: 3rem;
+    width:80%;
+    height: 100%;
+    font-size: 1.3rem;
+    
+}
+
+.volunteer {
+    
+    flex-direction: column; /* Set initial direction to row */
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    
+   
+         
+}
+
+.volunteer p {
+    padding-bottom: 2rem; /* Adjust padding as needed */
+    margin-bottom: 2rem; /* Adjust margin as needed */
+    height: 100%;
+    overflow: hidden;
+
+ 
+
+}
+
+.volunteer .content1 {
+    padding-bottom: 0; /* Adjust padding as needed */
+    margin-bottom: 0; /* Adjust margin as needed */
+    height: 100%;
+    overflow: hidden;
+
+ 
+
+}
+.volunteer .content2 {
+    padding-bottom: 0; /* Adjust padding as needed */
+    margin-bottom: 0; /* Adjust margin as needed */
+    height: 100%;
+    overflow: hidden;
+
+ 
+
+}
+
+.volunteer .column {
+ float: none; /* Remove float */
+ width: 100%; /* Set each column to occupy full width */
+ height: auto;
+ 
+}
+  
+}
