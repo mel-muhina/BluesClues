@@ -9,9 +9,7 @@
     margin: 0 auto;
     font-family: 'Nunito Sans';
     font-size: 16px;
-    
-    
-    
+   
    } 
    
    
@@ -28,6 +26,8 @@
     float: left;
     height: 15%;
     padding: 10px 0 0 20px;
+    margin: 0;
+    ov
   
   }
   
@@ -35,14 +35,13 @@
  
    .nav {
     text-align: right; 
-  
-         
+          
    }
    
    .nav ul {
        list-style-type: none; /* Remove default list styling */
        margin: 0;
-       padding-right: 80px;   
+       padding-right: 2rem;   
       
        
    }
@@ -95,10 +94,12 @@
     background-size: cover;
     background-position: center;
     height: 50rem;
+    width: 100%;
     margin-top: -10rem;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     flex-direction: column; /* Stack items vertically */
+    overflow: hidden; /* Hide horizontal overflow */
  
        
    }
@@ -144,7 +145,7 @@
    }
 
    .things .row {
-    width: 100%;
+    width: 90%;
    }
  
    
@@ -392,7 +393,6 @@
    }
  
   footer img {
-    
     width: 5%;
    }
    
@@ -400,8 +400,20 @@
    /* Responsive Design */
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 450px) {
+  header, .intro {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 
+   } 
+
+  footer {
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
 
 }
 
