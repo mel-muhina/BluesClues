@@ -402,25 +402,34 @@
 
 @media screen and (max-width: 450px) {
 
-  
   * {
-    width: auto;
-    margin: 0 auto;
-    padding: 0;
-    overflow-x: auto;
-   }
+    overflow-x: hidden;
+  }
+ 
 
    body {
     margin: 0;
     padding: 0;
 }
 
+.nav {
+  position: relative; /* Ensure a positioning context */
+   z-index: 3; /* Set a higher z-index value for the navigation bar */
+}
+
    
  .nav ul {
+  font-size:  3rem;
+ 
+  
+}
+
+.nav li {
   list-style-type: none; /* Remove default list styling */
   margin: auto;
   padding: 0;   
   padding-top: 0;
+  z-index: 3;
   
  
   
@@ -431,15 +440,26 @@
     width: 100%;
     height: 100%;
     margin: auto;
-    padding: 0;
+    padding-top: 3rem;
     text-align: center;
+    overflow: auto;
     
+   } 
+
+   .intro h1 {
+    padding-top: 3rem;
+    margin: 14rem 0 0 0;
+    text-align: center;
+    overflow: auto;
+  
    } 
 
  
   footer {
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0rem;
+    width: 100%;
+    overflow: hidden;
   }
 
    
@@ -456,17 +476,19 @@
 
 @media screen and (max-width: 900px) {
 
- 
+  
 
     .column {
         width: 100%; /* Change width to 100% to make them stack vertically */
         box-sizing: border-box; /* Include padding and border in the column's total width */
         max-height: 100%;
+        overflow: hidden;
       }
 
       .things img, .how img {
         width: 100%;
         height: 100%;
+        overflow: hidden;
        }
 
       .breakaway {
@@ -478,19 +500,22 @@
       overflow: hidden;
       margin-top: -15rem;
       background-size: stretch;
+      
       }
 
       .intro h1{
-        padding: 4rem;
+      padding: 2rem 0;
       overflow: hidden;
       font-size: 4rem;
+      overflow: hidden;
       }
 
       .intro h2{
-      padding: 0;
+      padding: 2rem 0;
       margin: 0;
       overflow: hidden;
       font-size: 2.5rem;
+
       }
 
       h2, h3 {
@@ -503,7 +528,6 @@
     .about p {
       width: 70%;
       overflow: hidden;
-      
       padding: 4rem;
       text-align: center;
     }
@@ -513,6 +537,7 @@
        width: 100%;
        height: 100%;
        margin: 0 auto;
+       overflow: hidden;
       
            
   }
@@ -520,6 +545,7 @@
   .things h2 {
     padding-bottom: 0;
     margin-bottom: 0;
+    overflow: hidden;
 
   }
 
@@ -528,10 +554,12 @@
     width: 100%; /* Set each column to occupy full width */
     padding-bottom: 1rem; /* Add padding between columns */
     margin: 0;
+    overflow: hidden;
   }
 
   .things img, .how img{
-    width: 80%;
+    width: 100%;
+    overflow: hidden;
  
      
 }
@@ -541,22 +569,25 @@
 .how h2 {
  padding-bottom: 0;
  margin-bottom: 0;
+ overflow: hidden;
 
 }
 
 
 .locations {
-    margin-top: 15rem;
+    margin-top: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .locations p {
     margin: 0;
-    padding: 3rem;
-    width:80%;
-    height: 100%;
+    padding: 1rem 0 1rem 2rem;
+    width:85%;
     font-size: 1.3rem;
+    overflow: hidden;
+
     
 }
 
@@ -566,7 +597,7 @@
     width: 100%;
     height: 100%;
     padding-top: 2rem;
-    
+    overflow: hidden;
    
          
 }
@@ -583,17 +614,18 @@
 }
 
 .volunteer .content1 {
-    padding-bottom: 0; /* Adjust padding as needed */
-    margin-bottom: 0; /* Adjust margin as needed */
+    padding: 0; /* Adjust padding as needed */
+    margin: 0; /* Adjust margin as needed */
     height: 100%;
+    width: 100%;
     overflow: hidden;
 
  
 
 }
 .volunteer .content2 {
-    padding-bottom: 0; /* Adjust padding as needed */
-    margin-bottom: 0; /* Adjust margin as needed */
+    padding: 0; 
+    margin: 0; 
     height: 100%;
     overflow: hidden;
 
@@ -606,7 +638,8 @@
  width: 100%; /* Set each column to occupy full width */
  height: auto;
  margin: 0;
- 
+ padding: 0.2rem 0;
+ overflow: hidden;
 }
 
  
@@ -615,13 +648,13 @@
      list-style-type: none; /* Remove default list styling */
      margin: 0;
      padding-right: 0;   
-    
+     overflow: hidden;
      
  }
 
  .logo {
   display: none;
- 
+  overflow: hidden;
 }
   
 }
