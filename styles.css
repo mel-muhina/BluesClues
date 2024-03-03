@@ -413,22 +413,26 @@
 }
 
 .nav {
-  position: relative; /* Ensure a positioning context */
+  
+   position: relative; /* Ensure a positioning context */
    z-index: 3; /* Set a higher z-index value for the navigation bar */
 }
 
    
  .nav ul {
-  font-size:  3rem;
  
+  padding: 0;
+  font-size:  2rem;
+  width: 100%;
+  overflow: hidden;
   
 }
 
 .nav li {
   list-style-type: none; /* Remove default list styling */
-  margin: auto;
-  padding: 0;   
-  padding-top: 0;
+  margin: 0;
+  
+  padding: 0.5rem;   
   z-index: 3;
   
  
@@ -498,7 +502,7 @@
     .intro {
       width: 100%;
       overflow: hidden;
-      margin-top: -15rem;
+      margin-top: -18rem;
       background-size: stretch;
       
       }
